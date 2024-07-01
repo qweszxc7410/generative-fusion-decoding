@@ -292,7 +292,7 @@ class Breezper:
                 for k, beam in enumerate(beams.list()):
                     print(f'''[{k}] asr_score={beam.asr_score}, llm_score={beam.llm_score},fuse_score={beam.fuse_score},
 {self.asr_tokenizer.decode(beam.asr_ids)}''')
-                print()
+
             elif DEBUG > 0:
                 beam = beams.list()[0]
                 print(f'''[0] asr_score={beam.asr_score}, llm_score={beam.llm_score},fuse_score={beam.fuse_score},
